@@ -1,0 +1,22 @@
+# Ignore build output
+dist/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore Vite config and environment files
+vite.config.*  
+.env*
+.env/
+
+# Ignore public assets
+public/
+
+# Ignore lock files and package manager artifacts
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore misc
+*.log
+.DS_Store
