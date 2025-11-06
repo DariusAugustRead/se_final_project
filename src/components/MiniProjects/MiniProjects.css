@@ -1,0 +1,8 @@
+.mini_projects__label {
+  margin: 15px 0 0;
+  opacity: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transform: scale(6);
+}

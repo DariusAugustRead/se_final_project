@@ -1,4 +1,11 @@
 .lightbyte {
-  display: flex;
-  flex-direction: column;
+}
+
+.lightbyte_label {
+  margin: 15px 0 0;
+  opacity: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transform: scale(6);
 }

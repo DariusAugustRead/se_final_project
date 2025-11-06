@@ -5,6 +5,7 @@
 }
 
 .tape-story__label {
+  transform: scale(0.25);
 }
 
 .tape-story__info {

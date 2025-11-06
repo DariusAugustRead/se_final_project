@@ -4,8 +4,5 @@
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
-}
-
-.about_label:hover {
-  opacity: 0.6;
+  transform: scale(6);
 }

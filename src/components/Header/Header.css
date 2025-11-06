@@ -4,7 +4,7 @@
   max-height: 98px;
   width: 100%;
   margin: 0 0 80px;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,11 +16,11 @@
 .header__center,
 .header__right {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .header__left_logo {
-  margin: 5px;
+  margin: 5px 5px 5px 0;
   width: 44px;
   height: 48px;
   background-image: url(../../assets/logo_upright.png);
@@ -30,12 +30,13 @@
 }
 
 .header__left_logo:hover {
-  margin: 5px;
   background-image: url(../../assets/logo_upright_close.png);
 }
 
 .header__about-label {
-  margin: 15px 0 0;
+  width: 98px;
+  height: 24px;
+  margin: 20px 0 0;
   opacity: 1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -47,15 +48,23 @@
 }
 
 .header__center {
-  margin: 0 10px 0;
+  width: 178px;
+  height: 24px;
+  margin: 20px 0 0;
+  padding: 0 auto 0;
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
 }
 
+.header__center_name {
+  transform: scale(2);
+}
+
 .header__right {
-  margin: 15px 0 0;
+  margin: 25px 50px 0 0;
   opacity: 1;
+  transform: scale(2);
 }
 
 .header__right img:hover {

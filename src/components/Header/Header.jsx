@@ -1,7 +1,7 @@
 import "./Header.css";
-import name from "../../assets/Name.png";
 import { Link } from "react-router-dom";
 
+import name from "../../assets/name.png";
 import aboutLabel from "../../assets/about.png";
 import miniProjects from "../../assets/miniProjects.png";
 import lightbyte from "../../assets/lightbyte.png";

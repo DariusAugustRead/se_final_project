@@ -1,9 +1,0 @@
-.blog {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
-.blog__label {
-  margin: 80px 0;
-}
