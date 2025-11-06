@@ -1,0 +1,8 @@
+.about_label {
+  margin: 15px 0 0;
+  opacity: 1;
+}
+
+.about_label:hover {
+  opacity: 0.6;
+}
