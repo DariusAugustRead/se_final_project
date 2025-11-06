@@ -1,12 +1,15 @@
 .footer {
+  background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: fit-content;
   height: 98px;
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
   box-sizing: border-box;
+  margin: 60px 0 0;
 }
 
 .footer__icon {
@@ -17,7 +20,7 @@
   image-rendering: pixelated;
 }
 
-.footer__name {
+.footer__banner {
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;

@@ -1,0 +1,13 @@
+.tape-story {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tape-story__label {
+}
+
+.tape-story__info {
+  color: white;
+  justify-content: flex-start;
+}

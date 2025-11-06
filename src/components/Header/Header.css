@@ -3,7 +3,7 @@
   justify-content: space-around;
   max-height: 98px;
   width: 100%;
-  margin: 0;
+  margin: 0 0 80px;
   padding: 20px;
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
 .header__center,
 .header__right {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .header__left_logo {
@@ -32,6 +32,18 @@
 .header__left_logo:hover {
   margin: 5px;
   background-image: url(../../assets/logo_upright_close.png);
+}
+
+.header__about-label {
+  margin: 15px 0 0;
+  opacity: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.header__about-label:hover {
+  opacity: 0.6;
 }
 
 .header__center {

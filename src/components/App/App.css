@@ -13,4 +13,7 @@ body {
   padding: 0;
   width: 100vw;
   background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
 }
