@@ -3,7 +3,3 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
-.peephole__label {
-  transform: scale(2);
-}

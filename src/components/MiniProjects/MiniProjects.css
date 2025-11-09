@@ -1,8 +1,35 @@
+.mini_projects {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  color: white;
+  margin: 180px 0 0;
+  padding: 0;
+  align-items: center;
+}
+
 .mini_projects__label {
-  margin: 15px 0 0;
+  transform: scale(6);
+  margin: 60px 0 40px;
   opacity: 1;
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
-  transform: scale(6);
+}
+
+.mini_projects__title {
+  display: flex;
+  justify-content: center;
+}
+
+.mini_projects__body {
+  margin: 180px 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  align-items: center;
+}
+
+.mini_projects__body img {
+  transform: scale(4);
 }
