@@ -1,8 +1,11 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-import name from "../../assets/name.png";
 import aboutLabel from "../../assets/about.png";
+
+import name from "../../assets/name.png";
+import banner from "../../assets/banner.png";
+
 import miniProjects from "../../assets/miniProjects.png";
 import lightbyte from "../../assets/lightbyte.png";
 
@@ -19,6 +22,7 @@ function Header() {
       </div>
       <div className="header__center">
         <img className="header__center_name" src={name} alt="" />
+        <img className="header__center_banner " src={banner} alt="" />
       </div>
 
       <div className="header__right">

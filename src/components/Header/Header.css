@@ -3,7 +3,7 @@
   justify-content: space-around;
   max-height: 98px;
   width: 100%;
-  margin: 0 0 80px;
+  margin: 0;
   padding: 20px 20px 20px 0;
   position: fixed;
   top: 0;
@@ -48,6 +48,8 @@
 }
 
 .header__center {
+  display: flex;
+  flex-direction: column;
   width: 178px;
   height: 24px;
   margin: 20px 0 0;
@@ -58,6 +60,10 @@
 }
 
 .header__center_name {
+  transform: scale(2);
+}
+
+.header__center_banner {
   transform: scale(2);
 }
 

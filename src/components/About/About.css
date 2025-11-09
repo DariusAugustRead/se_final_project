@@ -1,8 +1,23 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  color: white;
+  margin: 180px 0 0;
+  padding: 0 auto;
+  align-items: center;
+}
+
 .about_label {
-  margin: 15px 0 0;
+  height: 72px;
+  width: 294px;
+  margin: 15px 0 40px;
   opacity: 1;
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
-  transform: scale(6);
+}
+
+.about__info {
+  align-self: flex-start;
 }
