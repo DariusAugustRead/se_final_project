@@ -7,7 +7,7 @@ function Peephole() {
       <img className="peephole__label" src={peepholeLabel} alt="" />
       <h2 className="peephole__title">A silent adventure</h2>
       <p className="peephole__info">
-        Discover the origin of a kidnapped animal modified by augmentation
+        Discover the origin of a poached animal modified by augmentation
         experiments as he discovers his new potential.
       </p>
     </div>

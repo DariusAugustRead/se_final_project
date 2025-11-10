@@ -7,6 +7,8 @@ function Lightbyte() {
       <img className="lightbyte_label" src={label} alt="" />
       <h2 className="lightbyte__title"></h2>
       <p className="lightbyte__info"></p>
+      <p className="lightbyte__info"></p>
+      <p className="lightbyte__info"></p>
     </div>
   );
 }

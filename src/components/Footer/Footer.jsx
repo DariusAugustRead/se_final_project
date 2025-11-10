@@ -5,7 +5,7 @@ import banner from "../../assets/Banner.png";
 function Footer() {
   return (
     <div className="footer">
-      <img className="footer__icon" src={faceIcon} alt="" />
+      <div className="footer__icon" />
       <img className="footer__banner" src={banner} alt="" />
     </div>
   );

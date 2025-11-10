@@ -1,6 +1,7 @@
 import "./MiniProjects.css";
 import label from "../../assets/miniProjects.png";
 
+import Tapestory from "../TapeStory/TapeStory";
 import Peephole from "../Peephole/Peephole";
 import Planetary from "../Planetary/Planetary";
 import FishHen from "../FishHen/FishHen";
@@ -17,6 +18,7 @@ function MiniProject() {
         <br />
       </h2>
       <div className="mini_projects__body">
+        <Tapestory />
         <Peephole />
         <Planetary />
         <FishHen />

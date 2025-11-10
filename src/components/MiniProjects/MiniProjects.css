@@ -11,7 +11,7 @@
 
 .mini_projects__label {
   transform: scale(6);
-  margin: 60px 0 40px;
+  margin: 60px 0 20px;
   opacity: 1;
   background-size: contain;
   background-repeat: no-repeat;
@@ -20,9 +20,9 @@
 
 .mini_projects__title {
   display: flex;
-  justify-content: center;
-  margin: 20px 0 30px;
-  border-bottom: 4px solid white;
+  text-align: center;
+  margin: 40px 0 30px;
+  border-bottom: 2px solid white;
 }
 
 .mini_projects__body {
