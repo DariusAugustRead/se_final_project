@@ -1,6 +1,7 @@
 .mini_projects {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 720px;
   color: white;
   margin: 180px 0 0;
@@ -20,16 +21,14 @@
 .mini_projects__title {
   display: flex;
   justify-content: center;
+  margin: 20px 0 30px;
+  border-bottom: 4px solid white;
 }
 
 .mini_projects__body {
-  margin: 180px 0 60px;
+  margin: 96px 0 60px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 60px;
   align-items: center;
-}
-
-.mini_projects__body img {
-  transform: scale(4);
 }
