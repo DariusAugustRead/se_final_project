@@ -1,17 +1,21 @@
-import "./Peephole.css";
 import peepholeLabel from "../../assets/projectPeephole.png";
+
+import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
 
 function Peephole() {
   return (
-    <div className="peephole">
-      <img className="peephole__label" src={peepholeLabel} alt="" />
-      <h2 className="peephole__title">A silent adventure</h2>
-      <p className="peephole__info">
-        Discover the origin of a poached animal modified by augmentation
-        experiments as he discovers his new potential.
-      </p>
-    </div>
+    <MiniProjectCard
+      className="mini-project-card--center mini-project-card--compact"
+      imgSrc={peepholeLabel}
+      imgAlt="Project Peep"
+      title="A silent adventure"
+      description={
+        <>
+          Discover the origin of a poached animal modified by augmentation
+          experiments as he discovers his new potential in the outside world.
+        </>
+      }
+    />
   );
 }
-
 export default Peephole;

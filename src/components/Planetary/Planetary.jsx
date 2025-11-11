@@ -1,17 +1,22 @@
-import "./Planetary.css";
 import planetLabel from "../../assets/projectPlanet.png";
+
+import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
 
 function Planetary() {
   return (
-    <div className="planet">
-      <img className="planet__label" src={planetLabel} alt="" />
-      <h2 className="planet__title">When innocence gets tainted</h2>
-      <p className="planet__info">
-        The land is "new" and the creator creates beings He suitable for the
-        tasks. Follow the story about one finding her purpose when all she has
-        is her instincts.
-      </p>
-    </div>
+    <MiniProjectCard
+      className="mini-project-card--center mini-project-card--compact"
+      imgSrc={planetLabel}
+      imgAlt="Project Planet"
+      title="When innocence gets tainted"
+      description={
+        <>
+          The land is "new" and the creator creates beings He suitable for the
+          tasks. Follow the story about one finding her purpose when all she has
+          is her instincts.
+        </>
+      }
+    />
   );
 }
 

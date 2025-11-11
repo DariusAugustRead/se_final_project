@@ -5,7 +5,7 @@ import Tapestory from "../TapeStory/TapeStory";
 import Peephole from "../Peephole/Peephole";
 import Planetary from "../Planetary/Planetary";
 import FishHen from "../FishHen/FishHen";
-import triplet from "../triplet/triplet";
+import Triplet from "../Triplet/Triplet";
 
 function MiniProject() {
   return (
@@ -22,7 +22,7 @@ function MiniProject() {
         <Peephole />
         <Planetary />
         <FishHen />
-        <triplet />
+        <Triplet />
       </div>
     </div>
   );
