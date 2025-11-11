@@ -1,11 +1,11 @@
-.famlet {
+.triplet {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   gap: 10px;
 }
 
-.famlet__label {
+.triplet__label {
   transform: scale(6);
   margin: 60px 0;
   background-size: contain;
@@ -16,11 +16,11 @@
   align-self: center;
 }
 
-.famlet__title {
+.triplet__title {
   align-self: center;
 }
 
-.famlet__info {
+.triplet__info {
   align-self: flex-start;
   margin: 0;
 }
