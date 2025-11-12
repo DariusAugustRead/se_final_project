@@ -1,10 +1,11 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* ensure left/center/right don't overlap */
+  align-items: center; /* vertically center header children */
   max-height: 98px;
   width: 100%;
   margin: 0;
-  padding: 20px 20px 40px 0;
+  padding: 20px; /* simpler uniform padding */
   position: fixed;
   top: 0;
   left: 0;
@@ -17,6 +18,18 @@
 .header__right {
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+
+/* Image-based labels: fix height and let width scale proportionally */
+.header__about-label,
+.header__right_mini-projects,
+.header__right_lightbyte {
+  display: block;
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  image-rendering: pixelated;
 }
 
 .header__left_logo {
@@ -34,45 +47,58 @@
 }
 
 .header__about-label {
-  width: 98px;
-  height: 24px;
-  margin: 20px 0 0;
-  opacity: 1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  image-rendering: pixelated;
-}
-
-.header__about-label:hover {
-  opacity: 0.6;
+  margin: 10px 0 0;
 }
 
 .header__center {
   display: flex;
   flex-direction: column;
   width: 178px;
-  height: 24px;
-  margin: 20px 0 0;
-  padding: 0 auto 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  image-rendering: pixelated;
+  margin-left: 96px; /* align via flexbox */
+  align-items: center;
 }
 
 .header__center_name {
-  transform: scale(2);
+  display: block;
+  height: 36px;
+  width: auto;
+  object-fit: contain;
 }
 
 .header__center_banner {
-  transform: scale(2);
+  display: block;
+  height: 18px;
+  width: auto;
+  object-fit: contain;
 }
 
 .header__right {
-  margin: 25px 50px 0 0;
-  opacity: 1;
-  transform: scale(2);
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 20px;
 }
 
-.header__right img:hover {
-  opacity: 0.6;
+.header__about-label,
+.header__right_mini-projects,
+.header__right_lightbyte {
+  display: inline-block;
+  height: 24px;
+  width: auto;
+}
+
+.header__about-label--hover,
+.header__right_mini-projects--hover,
+.header__right_lightbyte--hover {
+  display: none;
+}
+
+.header__left a:hover .header__about-label--default,
+.header__right a:hover .header__right_mini-projects--default,
+.header__right a:hover .header__right_lightbyte--default {
+  display: none;
+}
+.header__left a:hover .header__about-label--hover,
+.header__right a:hover .header__right_mini-projects--hover,
+.header__right a:hover .header__right_lightbyte--hover {
+  display: inline-block;
 }
