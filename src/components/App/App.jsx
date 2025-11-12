@@ -15,6 +15,7 @@ function App() {
     <>
       <div className="page">
         <Header />
+
         <Home />
 
         <Routes>

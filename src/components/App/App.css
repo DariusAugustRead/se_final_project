@@ -17,3 +17,8 @@ body {
   background-repeat: no-repeat;
   image-rendering: pixelated;
 }
+
+.sidePanels {
+  display: flex;
+  justify-content: space-between;
+}
