@@ -1,11 +1,10 @@
 import "./About.css";
 import about from "../../assets/About.png";
-import { Link } from "react-router-dom";
 
 function About() {
   return (
     <div className="about">
-      <img className="about_label" src={about} alt="" />
+      <img className="about_label" src={about} alt="About header" />
       <h2 className="about__title">My journey as a solo developer</h2>
       <p className="about__info">
         Hello all. I am pursuing my dream of becoming a game, and now, front-end
