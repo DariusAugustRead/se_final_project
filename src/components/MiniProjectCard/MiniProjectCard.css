@@ -23,10 +23,7 @@
   margin: 0;
   line-height: 1.4;
 }
-/* 
-.mini-project-card--compact {
-  max-width: 560px;
-} */
+
 .mini-project-card--center {
   align-items: center;
   text-align: flex-start;

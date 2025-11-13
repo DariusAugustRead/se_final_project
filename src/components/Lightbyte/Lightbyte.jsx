@@ -4,15 +4,15 @@ import label from "../../assets/lightbyte.png";
 function Lightbyte() {
   return (
     <div className="lightbyte">
-      <img className="lightbyte_label" src={label} alt="Lightbyte header" />
+      <img className="lightbyte__label" src={label} alt="Lightbyte header" />
 
       <h2 className="lightbyte__title">The Pilot</h2>
       <p className="lightbyte__info">
         After the world settled from previous events, the inhabitants have
         sorted themselves into 3 proper trade professions, farmers, fishermen
         and cooks (Prided themselves on hard work). There were also those that
-        practiced ancient arts, that lived outside of proper society (Prided
-        themselves in spiritual manipulation).
+        practiced ancient <b className="red"> magic</b>, that lived outside of
+        proper society (Prided themselves in spiritual manipulation).
       </p>
       <p className="lightbyte__info">
         There was also a family, that did not fit in with either group, living
@@ -58,8 +58,9 @@ function Lightbyte() {
       </p>
       <p className="lightbyte__info">
         You lie in bed, that night, thinking about the kid you were (struggling
-        with school, being socially awkward and playing video games) and how you
-        might have liked an explanation back then until you fall asleep.
+        with <b className="yellow">school</b>, being socially awkward and
+        playing video games) and how you might have liked an explanation back
+        then until you fall asleep.
       </p>
       <p className="lightbyte__info">
         You open your eyes in a recently familiar hut. When you get up and move
@@ -70,9 +71,9 @@ function Lightbyte() {
 
       <h2 className="lightbyte__title">The Premise</h2>
       <p className="lightbyte__info">
-        You play as an adult, in your child body, navigating the <b>warped</b>{" "}
-        blend of your past life's concerns and the show you recently reacquanted
-        with.
+        You play as an adult, in your child body, navigating the warped
+        <b className="blue"> blend</b> of your past life's concerns and the show
+        you recently reacquanted with.
       </p>
       <p className="lightbyte__info">
         In this Metroidvania, the world opens up and develops before your eyes
