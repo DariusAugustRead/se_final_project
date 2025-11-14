@@ -29,3 +29,9 @@
   align-self: flex-start;
   margin: 0;
 }
+
+.tape-story__video {
+  display: flex;
+  align-self: center;
+  margin: 40px;
+}

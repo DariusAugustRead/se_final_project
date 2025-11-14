@@ -9,7 +9,7 @@ function TapeStory() {
         This is my current game dev project.
       </h4>
       <h3 className="tape-story__title">
-        This story is fully told when heard from both sides
+        This story is fully told when experienced from both sides
       </h3>{" "}
       <h2 className="tape-story__title">Side A</h2>{" "}
       <p className="tape-story__info">
@@ -23,6 +23,18 @@ function TapeStory() {
         You must climb out of the bottom of the pit, trying to escape the gas
         and other hazards to return to the surface.{" "}
       </p>
+      <div className="tape-story__video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/zgnq6J3F4ng?si=-0NS3X_pgyawoOhu"
+          title="YouTube video player"
+          style={{ border: 0 }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
       <h2 className="tape-story__title">Side B</h2>{" "}
       <p className="tape-story__info">
         Outside of the atmosphere, you play as a girl piloting a space jet.
