@@ -17,8 +17,9 @@
 }
 
 .tape-story__sublabel {
-  align-self: center;
+  text-align: center;
   margin: 0;
+  opacity: 0.5;
 }
 
 .tape-story__title {
@@ -34,4 +35,39 @@
   display: flex;
   align-self: center;
   margin: 40px;
+}
+
+@media (max-width: 768px) {
+  .tape-story {
+    max-width: 360px;
+  }
+
+  .tape-story__title {
+    text-align: center;
+    object-fit: contain;
+  }
+
+  .tape-story__video {
+    max-width: 360px;
+    height: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .tape-story {
+    max-width: 240px;
+    margin: 40px 0 0;
+  }
+
+  .tape-story__label {
+    transform: scale(4);
+  }
+
+  .tape-story__sublabel {
+  }
+
+  .tape-story__title {
+    text-align: center;
+    font-size: 16px;
+  }
 }

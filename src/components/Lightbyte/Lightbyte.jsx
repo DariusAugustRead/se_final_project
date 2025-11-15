@@ -35,10 +35,15 @@ function Lightbyte() {
         While they grieved, 3 rays of light shined on them and a voice spoke
         comforting them and giving them abilities and purpose.
       </p>
-      <p className="lightbyte__info">
-        Oldest son - Physical Strength Middle daughter - Ranged Accuracy
-        Youngest son - Speed and Agility
-      </p>
+      <div className="lightbyte__info-group">
+        <p className="lightbyte__info">
+          Oldest son - Physical Strength and Defense
+          <br />
+          Middle daughter - Ranged Accuracy
+          <br />
+          Youngest son - Speed and Agility
+        </p>
+      </div>
       <p className="lightbyte__info">
         The children left the only place they had known and followed the voices
         instruction.

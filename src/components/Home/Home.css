@@ -27,3 +27,25 @@
 .home__download_message:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .home__image {
+    max-height: 360px;
+  }
+
+  .home__message {
+    max-width: 360px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .home__image {
+    max-height: 240px;
+  }
+
+  .home__message {
+    max-width: 240px;
+  }
+}

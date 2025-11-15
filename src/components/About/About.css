@@ -11,7 +11,7 @@
 .about__label {
   height: 72px;
   width: auto;
-  margin: 40px 0;
+  margin: 40px 0 20px;
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
@@ -19,4 +19,22 @@
 
 .about__info {
   align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .about {
+    max-width: 360px;
+    margin: 120px 0 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .about {
+    max-width: 240px;
+    margin: 240px 0 0;
+  }
+
+  .about__title {
+    text-align: center;
+  }
 }

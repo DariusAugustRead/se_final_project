@@ -31,3 +31,15 @@
   image-rendering: pixelated;
   transform: scale(2);
 }
+
+@media (max-width: 768px) {
+  .footer__icon {
+    width: 18px;
+    height: 24px;
+    margin: 0 0 20px;
+  }
+
+  .footer__banner {
+    transform: none;
+  }
+}

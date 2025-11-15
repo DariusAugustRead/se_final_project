@@ -1,11 +1,11 @@
 .header {
   display: flex;
-  justify-content: space-around; /* ensure left/center/right don't overlap */
-  align-items: center; /* vertically center header children */
+  justify-content: space-around;
+  align-items: center;
   max-height: 98px;
   width: 100%;
   margin: 0;
-  padding: 30px 20px 20px; /* simpler uniform padding */
+  padding: 30px 0 20px 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,6 @@
   align-items: center;
 }
 
-/* Image-based labels: fix height and let width scale proportionally */
 .header__about-label,
 .header__right_mini-projects,
 .header__right_lightbyte {
@@ -46,6 +45,11 @@
   background-image: url(../../assets/logo_upright_close.png);
 }
 
+.header__right .header__about-label {
+  visibility: hidden;
+  display: none;
+}
+
 .header__about-label {
   margin: 0;
 }
@@ -54,7 +58,7 @@
   display: flex;
   flex-direction: column;
   width: 178px;
-  margin-left: 96px; /* align via flexbox */
+  margin: 0 0 0 96px;
   align-items: center;
 }
 
@@ -76,6 +80,10 @@
   margin: 0px 40px 0 0;
   display: flex;
   gap: 20px;
+}
+
+.header__right .header__about-label {
+  visibility: hidden;
 }
 
 .header__about-label,
@@ -101,4 +109,76 @@
 .header__right a:hover .header__right_mini-projects--hover,
 .header__right a:hover .header__right_lightbyte--hover {
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 30px 25px 20px;
+  }
+
+  .header__left,
+  .header__center,
+  .header__right {
+    gap: 10px;
+  }
+
+  .header__about-label,
+  .header__right_mini-projects,
+  .header__right_lightbyte {
+    height: 18px;
+  }
+
+  .header__center {
+    margin: 0 60px 0 80px;
+  }
+
+  .header__center_name {
+    height: 24px;
+  }
+
+  .header__right {
+    margin: 0px 40px 0 0;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    flex-direction: column;
+    padding: 30px 0 0;
+    max-height: 280px;
+  }
+
+  .header__center {
+    margin: 20px 0 20px;
+  }
+
+  .header__left_logo {
+    margin: 0;
+  }
+
+  .header__left .header__about-label {
+    visibility: hidden;
+    display: none;
+  }
+
+  .header__right {
+    margin: 0 0 0px;
+  }
+
+  .header__right .header__about-label {
+    visibility: visible;
+    display: flex;
+    margin: 0 0 6px;
+  }
+
+  .header__about-label--hover {
+    display: none !important;
+  }
+
+  .header__right .header__about-label:hover {
+    visibility: visible;
+    display: flex;
+  }
 }

@@ -36,6 +36,18 @@ function Header() {
       </div>
 
       <div className="header__right">
+        <Link to="/about">
+          <img
+            src={aboutLabel}
+            alt="About"
+            className="header__about-label header__about-label--default"
+          />
+          <img
+            src={aboutLabelHover}
+            alt="About hover"
+            className="header__about-label header__about-label--hover"
+          />
+        </Link>
         <Link to="/mini-projects">
           <img
             src={miniProjects}

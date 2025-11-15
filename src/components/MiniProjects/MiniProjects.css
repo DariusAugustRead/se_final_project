@@ -20,15 +20,52 @@
 
 .mini_projects__title {
   display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 40px 0 30px;
+  margin: 40px 0 0;
   border-bottom: 2px solid white;
 }
 
+span {
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+
 .mini_projects__body {
-  margin: 96px 0 60px;
+  margin: 96px 0 16px;
   display: flex;
   flex-direction: column;
   gap: 60px;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .mini_projects {
+    max-width: 360px;
+    margin: 130px auto 0;
+  }
+
+  .mini_projects__title {
+    margin: 70px 0 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .mini_projects {
+    max-width: 240px;
+    margin: 240px 0 0;
+  }
+
+  .mini_projects__label {
+    transform: scale(4);
+  }
+
+  .mini_projects__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .mini_projects__body {
+    margin: 0;
+  }
 }

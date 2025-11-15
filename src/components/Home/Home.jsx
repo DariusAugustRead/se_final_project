@@ -57,7 +57,7 @@ function Home() {
           ? "Capturing…"
           : error
           ? `Error: ${error}`
-          : "Click this logo to take a screenshot of this page"}
+          : "Click this photo to take a screenshot of this page"}
       </p>
 
       {screenshotUrl && (

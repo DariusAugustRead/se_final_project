@@ -1,4 +1,4 @@
-.sideimage {
+.sideImage {
   position: fixed;
   top: 0;
   width: 96px; /* fixed width requested */
@@ -10,10 +10,23 @@
   transform: scale(2);
 }
 
-.side-left {
+.sideImage-left {
   left: 0;
 }
 
-.side-right {
+.sideImage-right {
   right: 0;
+}
+
+@media (max-width: 768px) {
+  .sideImage {
+    transform: none;
+    top: -20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sideImage {
+    display: none;
+  }
 }

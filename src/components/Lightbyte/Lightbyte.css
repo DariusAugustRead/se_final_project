@@ -25,6 +25,15 @@
   align-self: flex-start;
 }
 
+.lightbyte__info-group {
+  text-align: center;
+}
+
+.lightbyte__info-group .lightbyte__info {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .red {
   color: #cc0e13;
 }
@@ -35,4 +44,21 @@
 
 .blue {
   color: #69ccef;
+}
+
+@media (max-width: 768px) {
+  .lightbyte {
+    margin: 120px 0 0;
+    max-width: 360px;
+  }
+
+  .lightbyte__label {
+    margin: 40px 0 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .lightbyte {
+    max-width: 240px;
+  }
 }

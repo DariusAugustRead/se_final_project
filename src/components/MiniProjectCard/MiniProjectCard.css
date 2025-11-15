@@ -38,3 +38,23 @@
   line-height: 1.25;
   font-size: 0.95rem;
 }
+
+@media (max-width: 768px) {
+  .mini-project-card {
+    max-width: 360px;
+  }
+
+  .mini-project-card__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .mini-project-card {
+    max-width: 240px;
+  }
+
+  .mini-project-card__label {
+    height: 72px;
+  }
+}

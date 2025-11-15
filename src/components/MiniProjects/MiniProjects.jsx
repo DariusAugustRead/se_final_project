@@ -13,7 +13,7 @@ function MiniProject() {
       <img src={label} alt="" className="mini_projects__label" />
       <h2 className="mini_projects__title">
         These are the smaller projects I plan on developing before I develop the
-        larger ones
+        larger ones <span>(Larger projects not listed)</span>
         <br />
         <br />
       </h2>
