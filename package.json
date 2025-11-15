@@ -8,15 +8,14 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start:server": "node src/server/screenshot-server.js"
+    "start:utils": "node src/utils/ThirdPartyApi.js"
   },
   "dependencies": {
     "express": "^5.1.0",
     "puppeteer": "^24.30.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.9.5",
-    "sharp": "^0.34.5"
+    "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

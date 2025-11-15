@@ -36,8 +36,8 @@ function Home() {
           src={screenshotUrl}
           alt="screenshot"
           style={{
-            minWidth: 720,
             width: "auto",
+            maxWidth: "100%",
             maxHeight: "100%",
             height: "auto",
           }}
