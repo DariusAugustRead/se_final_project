@@ -19,4 +19,6 @@ On the Home page, when my giant logo is clicked, a narrow screenshot of this pag
 
 ### GitHub project link
 
-https://github.com/DariusAugustRead/se_final_project
+Repo link: https://github.com/DariusAugustRead/se_final_project (Just in case)
+
+Pull request link: https://github.com/DariusAugustRead/se_final_project/pull/1
