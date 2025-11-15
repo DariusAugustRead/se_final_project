@@ -111,7 +111,7 @@
   display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     justify-content: space-between;
     padding: 30px 25px 20px;
@@ -143,7 +143,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .header {
     flex-direction: column;
     padding: 30px 0 0;

@@ -18,14 +18,14 @@
   right: 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .sideImage {
     transform: none;
     top: -20px;
   }
 }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .sideImage {
     display: none;
   }

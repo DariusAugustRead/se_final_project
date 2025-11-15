@@ -21,14 +21,14 @@
   align-self: flex-start;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about {
     max-width: 360px;
     margin: 120px 0 0;
   }
 }
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .about {
     max-width: 240px;
     margin: 240px 0 0;
