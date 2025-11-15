@@ -30,17 +30,17 @@
 
 @media (max-width: 768px) {
   .home__image {
-    max-width: 360px;
+    min-width: 360px;
   }
 
   .home__message {
-    max-width: 360px;
+    min-width: 360px;
     text-align: center;
     font-size: 16px;
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) {
   .home__image {
     max-width: 240px;
   }

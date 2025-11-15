@@ -111,7 +111,7 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
   .header {
     justify-content: space-between;
     padding: 30px 25px 20px;
@@ -140,13 +140,14 @@
   .header__right {
     margin: 0px 40px 0 0;
     gap: 10px;
+    transform: none;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .header {
     flex-direction: column;
-    padding: 30px 0 0;
+    padding: 30px 0;
     max-height: 280px;
   }
 
@@ -180,5 +181,15 @@
   .header__right .header__about-label:hover {
     visibility: visible;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header__center {
+    transform: scale(0.75);
+  }
+
+  .header__right {
+    transform: scale(0.75);
   }
 }

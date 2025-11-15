@@ -46,10 +46,10 @@
   color: #69ccef;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
   .lightbyte {
     margin: 120px 0 0;
-    max-width: 360px;
+    min-width: 360px;
   }
 
   .lightbyte__label {
@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .lightbyte {
     max-width: 240px;
   }
