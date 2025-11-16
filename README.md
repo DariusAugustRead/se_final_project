@@ -7,7 +7,8 @@ This site is optimized for desktop, tablet and smartphone screens.
 ## Software used
 
 React
-Express + Puppeteer (For screenshot Api functionality; unlimited use)
+Express
+RAWG Api
 
 ### Routing and Deployment:
 

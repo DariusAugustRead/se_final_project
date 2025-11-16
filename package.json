@@ -14,9 +14,8 @@
     "start:utils": "node -r dotenv/config src/utils/ThirdPartyApi.js"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "puppeteer": "^24.30.0",
     "dotenv": "^16.3.1",
+    "express": "^5.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.9.5"
