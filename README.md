@@ -9,13 +9,18 @@ This site is optimized for desktop, tablet and smartphone screens.
 React
 Express + Puppeteer (For screenshot Api functionality; unlimited use)
 
+### Routing and Deployment:
+
+To build and deploy from this repo:
+
+npm run build
+npm run deploy
+
 ### How to use:
 
 "npm run dev" in the terminal while in the root folder to run the app
 
-"npm run start:utils" in the terminal while in the server folder to run the api server
-
-On the Home page, when my giant logo is clicked, a narrow screenshot of this page is taken and replaces the logo. The image can be downloaded also. If you click the reset button, the original logo image replaces the screenshot.
+"npm run start:utils" in the terminal while in the server folder to run the RAWG api server (showing the top games right now)
 
 ### GitHub project link
 

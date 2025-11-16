@@ -1,133 +1,90 @@
 import express from "express";
-import puppeteer from "puppeteer";
+import dotenv from "dotenv";
+
+// prefer `.env.local` for development, fall back to `.env`
+dotenv.config({ path: ".env.local" });
+dotenv.config();
 
 const PORT = process.env.PORT || 4000;
 const app = express();
 
-// simple CORS for dev
+// simple CORS for local/dev usage
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   next();
 });
 
-app.get("/api/screenshot", async (req, res) => {
-  const target = req.query.url || "http://localhost:5173/";
+const RAWG_KEY = process.env.RAWG_API_KEY;
+if (!RAWG_KEY) {
+  console.warn(
+    "Warning: RAWG_API_KEY is not set. Requests will fail until configured."
+  );
+}
 
-  const scaleQuery = req.query.scale;
-  const scale = scaleQuery
-    ? Math.max(0.01, Math.min(5, parseFloat(scaleQuery)))
-    : 0.75;
+function getFetch() {
+  if (typeof fetch !== "undefined") return fetch;
+  throw new Error(
+    "global fetch is not available. Use Node 18+ or install a fetch polyfill (e.g. node-fetch)."
+  );
+}
 
-  let browser;
+app.get("/", (req, res) => {
+  res.send(
+    "RAWG proxy is running. See /api/rawg/popular or /api/rawg/search?q=... for usage."
+  );
+});
+
+// Search games: proxied so the API key stays on the server
+app.get("/api/rawg/search", async (req, res) => {
+  const q = req.query.q || "";
+  const page_size = Math.min(
+    40,
+    Math.max(1, parseInt(req.query.page_size) || 20)
+  );
+  const page = Math.max(1, parseInt(req.query.page) || 1);
+
+  if (!RAWG_KEY)
+    return res.status(500).json({ error: "RAWG_API_KEY not configured" });
+
+  const url = `https://api.rawg.io/api/games?search=${encodeURIComponent(
+    q
+  )}&page_size=${page_size}&page=${page}&key=${RAWG_KEY}`;
   try {
-    browser = await puppeteer.launch({
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
-    const page = await browser.newPage();
-
-    // determine viewport width so CSS media queries behave like the target device
-    // priority: explicit viewportWidth -> maxWidth -> default 1200
-    const viewportWidthParam = req.query.viewportWidth
-      ? Math.max(1, parseInt(req.query.viewportWidth, 10))
-      : null;
-    const maxWidthParam = req.query.maxWidth
-      ? Math.max(1, parseInt(req.query.maxWidth, 10))
-      : null;
-    const viewportWidth = viewportWidthParam || maxWidthParam || 1200;
-
-    await page.setViewport({
-      width: viewportWidth,
-      height: 900,
-      deviceScaleFactor: 1,
-    });
-    await page.goto(target, { waitUntil: "networkidle2" });
-
-    // allow callers to screenshot a specific element to avoid capturing fixed headers
-    const selector = req.query.selector;
-    let buffer;
-    if (selector) {
-      // wait for the element and screenshot only that element
-      await page.waitForSelector(selector, { timeout: 3000 }).catch(() => null);
-      const el = await page.$(selector);
-      if (!el) {
-        res.status(400).send(`Selector not found: ${selector}`);
-        return;
-      }
-      buffer = await el.screenshot({ type: "png" });
-    } else {
-      buffer = await page.screenshot({ fullPage: true, type: "png" });
-    }
-
-    // debug: report page widths so we can see which viewport was used
-    try {
-      const pageInnerWidth = await page.evaluate(() => ({
-        inner: window.innerWidth,
-        doc: document.documentElement.clientWidth,
-      }));
-      console.log(
-        `Viewport width used: ${viewportWidth}, page.innerWidth: ${pageInnerWidth.inner}, document.clientWidth: ${pageInnerWidth.doc}`
-      );
-    } catch (e) {
-      // ignore
-    }
-
-    // Resize when requested (either by explicit maxWidth or scale != 1)
-    if (maxWidthParam || (scale && scale !== 1)) {
-      const b64 = buffer.toString("base64");
-      const mime = "image/png";
-      const dataUrl = `data:${mime};base64,${b64}`;
-
-      const resizedDataUrl = await page.evaluate(
-        async ({ src, maxWidth, scale }) => {
-          return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.onload = () => {
-              try {
-                const requestedScale =
-                  scale && !Number.isNaN(Number(scale)) ? Number(scale) : 1;
-                const origW = img.width;
-                const scaledW = Math.max(1, Math.round(origW * requestedScale));
-                let newW = scaledW;
-                if (maxWidth) newW = Math.min(newW, Number(maxWidth));
-                newW = Math.max(1, newW);
-                const newH = Math.max(
-                  1,
-                  Math.round((img.height * newW) / img.width)
-                );
-
-                const c = document.createElement("canvas");
-                c.width = newW;
-                c.height = newH;
-                const ctx = c.getContext("2d");
-                ctx.drawImage(img, 0, 0, newW, newH);
-                resolve(c.toDataURL("image/png"));
-              } catch (err) {
-                reject(err);
-              }
-            };
-            img.onerror = (e) => reject(e);
-            img.src = src;
-          });
-        },
-        { src: dataUrl, maxWidth: maxWidthParam || null, scale: scale }
-      );
-
-      const base64Resized = resizedDataUrl.split(",")[1];
-      const outBuffer = Buffer.from(base64Resized, "base64");
-      res.set("Content-Type", "image/png");
-      res.send(outBuffer);
-    } else {
-      res.set("Content-Type", "image/png");
-      res.send(buffer);
-    }
+    const fetchFn = getFetch();
+    const r = await fetchFn(url);
+    const data = await r.json();
+    res.status(r.status).json(data);
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Screenshot error: " + err.message);
-  } finally {
-    if (browser) await browser.close();
+    console.error("RAWG search error:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Popular / curated games
+app.get("/api/rawg/popular", async (req, res) => {
+  const page_size = Math.min(
+    40,
+    Math.max(1, parseInt(req.query.page_size) || 9)
+  );
+  const page = Math.max(1, parseInt(req.query.page) || 1);
+
+  if (!RAWG_KEY)
+    return res.status(500).json({ error: "RAWG_API_KEY not configured" });
+
+  // ordering by rating desc
+  const url = `https://api.rawg.io/api/games?ordering=-rating&page_size=${page_size}&page=${page}&key=${RAWG_KEY}`;
+  try {
+    const fetchFn = getFetch();
+    const r = await fetchFn(url);
+    const data = await r.json();
+    res.status(r.status).json(data);
+  } catch (err) {
+    console.error("RAWG popular error:", err);
+    res.status(500).json({ error: err.message });
   }
 });
 
 app.listen(PORT, () =>
-  console.log(`Screenshot API listening on http://localhost:${PORT}`)
+  console.log(`RAWG proxy listening on http://localhost:${PORT}`)
 );

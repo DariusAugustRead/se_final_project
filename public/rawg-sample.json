@@ -1,0 +1,29 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "id": 3498,
+      "name": "Grand Theft Auto V",
+      "slug": "grand-theft-auto-v",
+      "released": "2013-09-17",
+      "background_image": "https://media.rawg.io/media/games/3e2/3e2e6e6b1b0fb1f2b1d2f7e0c1f8f7b2.jpg",
+      "rating": 4.47
+    },
+    {
+      "id": 4200,
+      "name": "Portal 2",
+      "slug": "portal-2",
+      "released": "2011-04-18",
+      "background_image": "https://media.rawg.io/media/games/1c5/1c5a7a7f3b3a3d3c3b3a3f3e3b3a3c3b.jpg",
+      "rating": 4.6
+    },
+    {
+      "id": 3328,
+      "name": "The Witcher 3: Wild Hunt",
+      "slug": "the-witcher-3-wild-hunt",
+      "released": "2015-05-18",
+      "background_image": "https://media.rawg.io/media/games/2d2/2d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f.jpg",
+      "rating": 4.66
+    }
+  ]
+}

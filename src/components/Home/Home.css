@@ -4,11 +4,7 @@
   align-items: center;
   color: white;
   margin: 180px 0 0;
-}
-
-.home__image {
-  margin: 60px 0 0;
-  max-width: 720px;
+  max-width: 960px;
 }
 
 .home__image:hover {
@@ -28,9 +24,9 @@
   opacity: 0.5;
 }
 
-@media (max-width: 768px) {
-  .home__image {
-    min-width: 360px;
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .home {
+    width: 720px;
   }
 
   .home__message {
@@ -40,12 +36,18 @@
   }
 }
 
-@media (min-width: 360px) {
-  .home__image {
-    max-width: 240px;
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .home {
+    width: 360px;
   }
 
   .home__message {
     max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    width: 240px;
   }
 }
