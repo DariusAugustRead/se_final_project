@@ -15,7 +15,7 @@ app.use((req, res, next) => {
   next();
 });
 
-const RAWG_KEY = process.env.RAWG_API_KEY;
+const RAWG_KEY = "2ba6aaa7fc3949c0ad590527a95a6f1b";
 if (!RAWG_KEY) {
   console.warn(
     "Warning: RAWG_API_KEY is not set. Requests will fail until configured."
