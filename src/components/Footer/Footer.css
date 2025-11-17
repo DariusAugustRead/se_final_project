@@ -32,7 +32,7 @@
   transform: scale(2);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
   .footer__icon {
     width: 18px;
     height: 24px;

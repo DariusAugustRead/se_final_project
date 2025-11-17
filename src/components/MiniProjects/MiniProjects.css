@@ -1,16 +1,16 @@
 .mini_projects {
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 720px;
   color: white;
-  margin: 180px auto 0;
+  margin: 180px 0 0;
   padding: 0;
   align-items: center;
 }
 
 .mini_projects__label {
-  transform: scale(6);
+  height: 72px;
+  width: auto;
   margin: 60px 0 20px;
   opacity: 1;
   background-size: contain;
@@ -39,10 +39,14 @@ span {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
   .mini_projects {
-    min-width: 360px;
-    margin: 130px auto 0;
+    max-width: 540px;
+    margin: 120px auto 0;
+  }
+
+  .mini_projects__label {
+    margin: 40px 0 20px;
   }
 
   .mini_projects__title {
@@ -52,12 +56,13 @@ span {
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .mini_projects {
-    max-width: 240px;
+    max-width: 320px;
     margin: 240px 0 0;
   }
 
   .mini_projects__label {
-    transform: scale(4);
+    height: 48px;
+    margin: 40px 0 20px;
   }
 
   .mini_projects__title {

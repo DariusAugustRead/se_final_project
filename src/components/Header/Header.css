@@ -45,11 +45,55 @@
   background-image: url(../../assets/logo_upright_close.png);
 }
 
-.header__right .header__about-label {
-  visibility: hidden;
-  display: none;
+.header__right {
+  margin: 0px 40px 0 0;
+  display: flex;
+  gap: 20px;
 }
 
+.header a .header__about-label--default {
+  display: inline-block;
+  visibility: visible;
+}
+.header a .header__about-label--hover {
+  display: none;
+  visibility: hidden;
+}
+
+/* >= 769px: hide the about-label in .header__right, show left */
+@media screen and (min-width: 769px) {
+  .header__right a .header__about-label--default,
+  .header__right a .header__about-label--hover {
+    display: none;
+    visibility: hidden;
+  }
+  .header__right a .header__about-label--default {
+    display: none;
+    visibility: hidden;
+  }
+  .header__left a .header__about-label--default {
+    display: inline-block;
+    visibility: visible;
+  }
+  .header__left a .header__about-label--hover {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* <= 768px: hide the about-label in .header__left, show right */
+@media screen and (max-width: 768px) {
+  .header__left a .header__about-label--default,
+  .header__left a .header__about-label--hover {
+    display: none;
+    visibility: hidden;
+  }
+  .header__right a .header__about-label--default,
+  .header__right a .header__about-label--hover {
+    display: inline-block;
+    visibility: visible;
+  }
+}
 .header__about-label {
   margin: 0;
 }
@@ -76,16 +120,6 @@
   object-fit: contain;
 }
 
-.header__right {
-  margin: 0px 40px 0 0;
-  display: flex;
-  gap: 20px;
-}
-
-.header__right .header__about-label {
-  visibility: hidden;
-}
-
 .header__about-label,
 .header__right_mini-projects,
 .header__right_lightbyte {
@@ -94,33 +128,57 @@
   width: auto;
 }
 
-.header__about-label--hover,
-.header__right_mini-projects--hover,
-.header__right_lightbyte--hover {
+/* Hide all hover variants by default; show default images by default. */
+.header a .header__about-label--hover,
+.header a .header__right_mini-projects--hover,
+.header a .header__right_lightbyte--hover {
   display: none;
+  visibility: hidden;
 }
 
-.header__left a:hover .header__about-label--default,
-.header__right a:hover .header__right_mini-projects--default,
-.header__right a:hover .header__right_lightbyte--default {
-  display: none;
-}
-.header__left a:hover .header__about-label--hover,
-.header__right a:hover .header__right_mini-projects--hover,
-.header__right a:hover .header__right_lightbyte--hover {
+.header a .header__about-label--default,
+.header a .header__right_mini-projects--default,
+.header a .header__right_lightbyte--default {
   display: inline-block;
+  visibility: visible;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+/* When hovering a specific link, swap only the images inside that link. */
+.header a:hover .header__about-label--default,
+.header a:hover .header__right_mini-projects--default,
+.header a:hover .header__right_lightbyte--default {
+  display: none;
+  visibility: hidden;
+}
+.header a:hover .header__about-label--hover,
+.header a:hover .header__right_mini-projects--hover,
+.header a:hover .header__right_lightbyte--hover {
+  display: inline-block;
+  visibility: visible;
+}
+
+/* Desktop defaults: left About is visible/interactive, right About is hidden/uninteractive */
+.header__left a .header__about-label--default {
+  display: inline-block;
+  visibility: visible;
+  pointer-events: auto;
+}
+.header__left a .header__about-label--hover {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header__right a .header__about-label--default,
+.header__right a .header__about-label--hover {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
   .header {
     justify-content: space-between;
     padding: 30px 25px 20px;
-  }
-
-  .header__left,
-  .header__center,
-  .header__right {
-    gap: 10px;
   }
 
   .header__about-label,
@@ -139,7 +197,7 @@
 
   .header__right {
     margin: 0px 40px 0 0;
-    gap: 10px;
+    gap: 30px;
     transform: none;
   }
 }
@@ -152,35 +210,46 @@
   }
 
   .header__center {
-    margin: 20px 0 20px;
+    margin: 20px 0;
   }
 
   .header__left_logo {
     margin: 0;
   }
 
-  .header__left .header__about-label {
-    visibility: hidden;
-    display: none;
-  }
-
+  /* On small screens we need the LEFT about-label hidden and the RIGHT about-label visible.
+     Use !important and pointer-events to ensure the left is non-functional and the right is interactive. */
   .header__right {
     margin: 0 0 0px;
   }
-
-  .header__right .header__about-label {
-    visibility: visible;
-    display: flex;
-    margin: 0 0 6px;
-  }
-
-  .header__about-label--hover {
+  /* hide left About entirely on small screens */
+  .header__left a .header__about-label--default,
+  .header__left a .header__about-label--hover {
     display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
   }
 
-  .header__right .header__about-label:hover {
-    visibility: visible;
-    display: flex;
+  /* show right About on small screens */
+  .header__right a .header__about-label--default {
+    display: inline-block !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .header__right a .header__about-label--hover {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Scoped hover swap for right About on small screens */
+  .header__right a:hover .header__about-label--default {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .header__right a:hover .header__about-label--hover {
+    display: inline-block !important;
+    visibility: visible !important;
   }
 }
 

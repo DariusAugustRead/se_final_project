@@ -16,7 +16,7 @@ function About() {
         time, I couldn't imagine that I would want to make them one day.
       </p>
       <p className="about__info">
-        At around 17, I feel in love with retro, pixel art. I use to download
+        At around 17, I fell in love with retro, pixel art. I use to download
         sprite sheets and study the colors and how animation worked. My biggest
         inspiration came when I saw little game in a laundry mat named "Metal
         Slug 3". The expression that could be conveyed with tiny squares and a

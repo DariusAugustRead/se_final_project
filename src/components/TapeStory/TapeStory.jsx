@@ -25,8 +25,7 @@ function TapeStory() {
       </p>
       <div className="tape-story__video">
         <iframe
-          width="560"
-          height="315"
+          className="tape-story__iframe"
           src="https://www.youtube.com/embed/zgnq6J3F4ng?si=-0NS3X_pgyawoOhu"
           title="YouTube video player"
           style={{ border: 0 }}

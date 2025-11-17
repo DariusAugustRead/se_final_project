@@ -4,10 +4,10 @@ import banner from "../../assets/Banner.png";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__icon" />
       <img className="footer__banner" src={banner} alt="" />
-    </div>
+    </footer>
   );
 }
 

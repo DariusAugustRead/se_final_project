@@ -24,21 +24,22 @@
   opacity: 0.5;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
   .home {
     width: 720px;
+    margin: 280px 0 0;
   }
 
   .home__message {
     min-width: 360px;
     text-align: center;
-    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .home {
     width: 360px;
+    margin: 240px 0 0;
   }
 
   .home__message {

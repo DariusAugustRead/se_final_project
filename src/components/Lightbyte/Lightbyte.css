@@ -11,7 +11,7 @@
 .lightbyte__label {
   height: 72px;
   width: auto;
-  margin: 40px 0;
+  margin: 60px 0 20px;
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
@@ -46,10 +46,10 @@
   color: #69ccef;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
   .lightbyte {
-    margin: 120px 0 0;
     min-width: 360px;
+    margin: 120px 0 0;
   }
 
   .lightbyte__label {
@@ -59,6 +59,12 @@
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .lightbyte {
+    margin: 240px 0 0;
+
     max-width: 240px;
+  }
+
+  .lightbyte__label {
+    margin: 40px 0 20px;
   }
 }

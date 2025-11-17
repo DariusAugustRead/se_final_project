@@ -1,0 +1,61 @@
+.top-games-card {
+  border-radius: 6px;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+}
+
+.top-games-card__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.top-games-card__image {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Placeholder shown when no image at all */
+.top-games-card__placeholder {
+  height: 140px;
+  background: #222;
+}
+
+/* No-image revealed on image error) */
+.top-games-card__no-image {
+  display: none;
+  height: 140px;
+  background: linear-gradient(135deg, #222, #111);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+}
+.top-games-card__no-image[style*="display: none"] {
+  display: none;
+}
+.top-games-card__no-image-title {
+  font-size: 14px;
+}
+
+.top-games-card__body {
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.top-games-card__title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.top-games-card__meta {
+  font-size: 12px;
+  opacity: 0.8;
+  color: #ddd;
+}
