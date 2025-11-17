@@ -29,11 +29,4 @@ MiniProjectCard.propTypes = {
   className: PropTypes.string,
 };
 
-MiniProjectCard.defaultProps = {
-  imgSrc: null,
-  imgAlt: "",
-  description: null,
-  className: "",
-};
-
 export default MiniProjectCard;

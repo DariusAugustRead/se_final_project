@@ -11,8 +11,8 @@
 }
 
 .footer__icon {
-  width: 24px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background-image: url(../../assets/faceIcon.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 @media screen and (min-width: 769px) and (max-width: 1100px) {
   .footer__icon {
     width: 18px;
-    height: 24px;
+    height: 30px;
     margin: 0 0 20px;
   }
 

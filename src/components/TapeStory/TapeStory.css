@@ -23,11 +23,13 @@
 
 .tape-story__title {
   align-self: center;
+  font-size: 30px;
 }
 
 .tape-story__info {
   align-self: flex-start;
   margin: 0;
+  font-size: 22px;
 }
 
 .tape-story__video {

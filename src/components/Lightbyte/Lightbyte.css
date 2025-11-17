@@ -18,11 +18,14 @@
 }
 
 .lightbyte__title {
+  font-size: 30px;
   align-self: center;
 }
 
 .lightbyte__info {
+  font-size: 20px;
   align-self: flex-start;
+  font-size: 22px;
 }
 
 .lightbyte__info-group {
@@ -48,7 +51,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1100px) {
   .lightbyte {
-    min-width: 360px;
+    min-width: 480px;
     margin: 120px 0 0;
   }
 
@@ -60,8 +63,7 @@
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .lightbyte {
     margin: 240px 0 0;
-
-    max-width: 240px;
+    max-width: 320px;
   }
 
   .lightbyte__label {

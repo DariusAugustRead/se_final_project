@@ -49,7 +49,7 @@ function Home() {
 
   return (
     <div className="home">
-      <p className="home__message">
+      <p className="home__title">
         {loading
           ? "Loading games…"
           : error

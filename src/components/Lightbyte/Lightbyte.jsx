@@ -76,9 +76,9 @@ function Lightbyte() {
 
       <h2 className="lightbyte__title">The Premise</h2>
       <p className="lightbyte__info">
-        {`You play as an adult, in your child body, navigating the warped
-        <b className="blue"> blend</b> of your past life's concerns and the show
-        you recently reacquanted with.`}
+        You play as an adult, in your child body, navigating the warped
+        <b className="blue"> blend</b> of your past {`life's`} concerns and the
+        show you recently reacquanted with.
       </p>
       <p className="lightbyte__info">
         In this Metroidvania, the world opens up and develops before your eyes
