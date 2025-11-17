@@ -1,5 +1,4 @@
 import "./Footer.css";
-import faceIcon from "../../assets/faceIcon.png";
 import banner from "../../assets/Banner.png";
 
 function Footer() {

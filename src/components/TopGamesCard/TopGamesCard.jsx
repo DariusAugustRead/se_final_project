@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import "./TopGamesCard.css";
 
 function TopGamesCard({ game }) {
@@ -41,5 +43,17 @@ function TopGamesCard({ game }) {
     </div>
   );
 }
+
+TopGamesCard.propTypes = {
+  game: PropTypes.shape({
+    website: PropTypes.string,
+    url: PropTypes.string,
+    slug: PropTypes.string,
+    background_image: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    released: PropTypes.string,
+    rating: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  }).isRequired,
+};
 
 export default TopGamesCard;

@@ -1,5 +1,5 @@
-import React from "react";
 import "./MiniProjectCard.css";
+import PropTypes from "prop-types";
 
 function MiniProjectCard({
   imgSrc,
@@ -20,5 +20,20 @@ function MiniProjectCard({
     </div>
   );
 }
+
+MiniProjectCard.propTypes = {
+  imgSrc: PropTypes.string,
+  imgAlt: PropTypes.string,
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  className: PropTypes.string,
+};
+
+MiniProjectCard.defaultProps = {
+  imgSrc: null,
+  imgAlt: "",
+  description: null,
+  className: "",
+};
 
 export default MiniProjectCard;

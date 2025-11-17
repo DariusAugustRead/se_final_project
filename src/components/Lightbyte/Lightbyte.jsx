@@ -21,10 +21,10 @@ function Lightbyte() {
         otherwise spiritually influenced.
       </p>
       <p className="lightbyte__info">
-        One night while the grandmother was talking to the parents about a
+        {`One night while the grandmother was talking to the parents about a
         reoccuring dream (7 shapes surrounding a star), the family's home was
         approached. Before they were compromised, the kids where hidden in a
-        place under the floor boards and told to not leave.
+        place under the floor boards and told to not leave.`}
       </p>
       <p className="lightbyte__info">
         They kids heard fighting happening until things got silent. The kids
@@ -76,9 +76,9 @@ function Lightbyte() {
 
       <h2 className="lightbyte__title">The Premise</h2>
       <p className="lightbyte__info">
-        You play as an adult, in your child body, navigating the warped
+        {`You play as an adult, in your child body, navigating the warped
         <b className="blue"> blend</b> of your past life's concerns and the show
-        you recently reacquanted with.
+        you recently reacquanted with.`}
       </p>
       <p className="lightbyte__info">
         In this Metroidvania, the world opens up and develops before your eyes

@@ -11,16 +11,16 @@ function About() {
         web developer.
       </p>
       <p className="about__info">
-        I have played video games my entire life. My first console was the Sega
+        {`I have played video games my entire life. My first console was the Sega
         Genesis, and I could play it for hours, when I was left alone. At the
-        time, I couldn't imagine that I would want to make them one day.
+        time, I couldn't imagine that I would want to make them one day.`}
       </p>
       <p className="about__info">
-        At around 17, I fell in love with retro, pixel art. I use to download
+        {`At around 17, I fell in love with retro, pixel art. I use to download
         sprite sheets and study the colors and how animation worked. My biggest
         inspiration came when I saw little game in a laundry mat named "Metal
         Slug 3". The expression that could be conveyed with tiny squares and a
-        limited color palette were amazing to watch while the gameplay demo ran.
+        limited color palette were amazing to watch while the gameplay demo ran.`}
       </p>
       <p className="about__info">
         At 21, I went to the Art Institute of Dallas to study animation but,
@@ -29,20 +29,20 @@ function About() {
         games on my own.
       </p>
       <p className="about__info">
-        I have tried programming with several game engines before but I never
+        {`I have tried programming with several game engines before but I never
         liked programming and I didn't stay consistent. I have also tried hiring
         programmers to work with but those relationships never developed into
-        anything.
+        anything.`}
       </p>
       <p className="about__info">
-        Now, in my 30s, after working many manual labor jobs and feeling
+        {`Now, in my 30s, after working many manual labor jobs and feeling
         unfulfilled, I have decided to pursue a career as a programmer. I
         thought about having a career in Cyber Security but after a little
         research, I didn't keep my interest. Then I found Triple Ten Software
         Engineering program and it felt like a better fit. This program has not
         been easy and I had to take multiple breaks and I have thought of giving
         up multiple times. But here I am working on my Final Project and the end
-        is near.
+        is near.`}
       </p>
       <p className="about__info">
         I hope to continue building my Software Engineering career along with

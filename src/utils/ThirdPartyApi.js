@@ -1,3 +1,4 @@
+/* eslint-env node */
 import express from "express";
 import dotenv from "dotenv";
 
@@ -8,7 +9,6 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 const app = express();
 
-// simple CORS for local/dev usage
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");

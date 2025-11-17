@@ -11,9 +11,9 @@ function Peephole() {
       title="A silent adventure"
       description={
         <>
-          Discover the origin of a poached animal modified by augmentation
+          {`Discover the origin of a poached animal modified by augmentation
           experiments as he discovers his new potential in the outside world. He
-          can't talk so you must read his non-verbal expressions.
+          can't talk so you must read his non-verbal expressions.`}
         </>
       }
     />
