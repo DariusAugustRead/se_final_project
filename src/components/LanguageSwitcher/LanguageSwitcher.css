@@ -1,0 +1,17 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  border: none;
+}
+.language-switcher button {
+  background: transparent;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.language-switcher:hover button {
+  background-color: white;
+  color: black;
+}

@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 import aboutLabel from "../../assets/English/about.png";
 import aboutLabelHover from "../../assets/English/about_hover.png";
@@ -72,6 +73,7 @@ function Header() {
             className="header__right_lightbyte header__right_lightbyte--hover"
           />
         </Link>
+        <LanguageSwitcher />
       </div>
     </header>
   );

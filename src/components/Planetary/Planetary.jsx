@@ -1,21 +1,18 @@
 import planetLabel from "../../assets/English/projectPlanet.png";
 
 import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
+import { useTranslation } from "react-i18next";
 
 function Planetary() {
+  const { t } = useTranslation();
+
   return (
     <MiniProjectCard
       className="mini-project-card--center mini-project-card--compact"
       imgSrc={planetLabel}
-      imgAlt="Project Planet"
-      title="When purity gets tainted"
-      description={
-        <>
-          {`The land is "new" and the creator creates beings He suitable for the
-          tasks. Follow the story about one finding her purpose when all she has
-          is her instincts.`}
-        </>
-      }
+      imgAlt={t("planetary.headerAlt")}
+      title={t("planetary.title")}
+      description={<>{t("planetary.description")}</>}
     />
   );
 }

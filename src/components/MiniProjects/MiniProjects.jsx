@@ -7,13 +7,17 @@ import Planetary from "../Planetary/Planetary";
 import FishHen from "../FishHen/FishHen";
 import Triplet from "../Triplet/Triplet";
 
+import { useTranslation } from "react-i18next";
+
 function MiniProject() {
+  const { t } = useTranslation();
+
   return (
     <div className="mini_projects">
       <img src={label} alt="" className="mini_projects__label" />
       <h2 className="mini_projects__title">
-        These are the smaller projects I plan on developing before I develop the
-        larger ones <span>(Larger projects in development...)</span>
+        {t("miniProjects.title")}
+        <span>{t("miniProjects.subtitle")}</span>
         <br />
         <br />
       </h2>

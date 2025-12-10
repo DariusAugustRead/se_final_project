@@ -1,0 +1,70 @@
+{
+  "header": { "about": "Acerca de", "projects": "Proyectos" },
+  "home": { "welcome": "Bienvenido" },
+  "about": {
+    "headerAlt": "Encabezado Acerca de",
+    "title": "Mi trayectoria como desarrollador en solitario",
+    "p1": "Hola a todos. Estoy persiguiendo mi sueño de convertirme en desarrollador de juegos y ahora en desarrollador front-end.",
+    "p2": "He jugado videojuegos toda mi vida. Mi primera consola fue la Sega Genesis, y podía jugar durante horas cuando me dejaban solo. En ese momento no podía imaginar que un día querría hacerlos.",
+    "p3": "Alrededor de los 17, me enamoré del pixel art retro. Solía descargar hojas de sprites y estudiar los colores y cómo funcionaba la animación. Mi mayor inspiración vino cuando vi un pequeño juego en una lavandería llamado \"Metal Slug 3\". La expresión que se podía transmitir con pequeños cuadrados y una paleta limitada de colores fue increíble de ver mientras se mostraba la demo de juego.",
+    "p4": "A los 21 fui al Art Institute of Dallas para estudiar animación pero, después de que se volvió muy caro y descubrí que estaría creativamente limitado, lo dejé. Luego intenté encontrar formas de animar y posiblemente hacer juegos por mi cuenta.",
+    "p5": "He intentado programar con varios motores de juegos antes pero nunca me gustó programar y no fui consistente. También intenté contratar programadores para trabajar conmigo pero esas relaciones nunca se desarrollaron en nada.",
+    "p6": "Ahora, en mis 30s, después de trabajar muchos trabajos manuales y sentirme insatisfecho, he decidido seguir una carrera como programador. Pensé en una carrera en Ciberseguridad pero después de investigar un poco, no mantuve el interés. Entonces encontré el programa de Triple Ten Software Engineering y se sintió más adecuado. Este programa no ha sido fácil y tuve que tomar múltiples descansos y he pensado en rendirme varias veces. Pero aquí estoy trabajando en mi Proyecto Final y el final está cerca.",
+    "p7": "Espero continuar construyendo mi carrera en Ingeniería de Software junto con crear mis juegos y posiblemente mi propio universo en paralelo."
+  },
+  "miniProjects": {
+    "headerAlt": "Encabezado de mini proyectos",
+    "title": "Estos son los proyectos más pequeños que planeo desarrollar antes de crear los más grandes",
+    "subtitle": "(Proyectos más grandes en desarrollo...)"
+  },
+  "tapestory": {
+    "headerAlt": "Encabezado TapeStory",
+    "sublabel": "Este es mi proyecto actual de desarrollo de juegos.",
+    "lead": "Esta historia se cuenta por completo cuando se experimenta desde ambos lados",
+    "sideATitle": "Lado A",
+    "sideA_p1": "Juegas como un niño que se entrena como aprendiz de minería. Un día, al final de un turno, escuchas a tus compañeros adultos hablar sobre la mina abandonada sellada debido a algo que sucedió. Por curiosidad te escapas una noche, con tu gallo, y tratas de asomarte por las grietas del sello cuando se rompe y te caes.",
+    "sideA_p2": "Debes escalar desde el fondo del pozo, tratando de escapar del gas y otros peligros para volver a la superficie.",
+    "videoTitle": "Tráiler de TapeStory",
+    "sideBTitle": "Lado B",
+    "sideB_p1": "Fuera de la atmósfera, juegas como una chica pilotando un jet espacial. Mientras patrullas tu planeta, ves un blip en tu radar y vas a investigarlo. A medida que te acercas, notas que se aproxima rápidamente antes de pasar de largo. Entras en pánico, giras rápidamente y lo persigues.",
+    "sideB_p2": "Debes luchar contra las hordas entrantes de enemigos, tratando de llegar al planeta antes de que lo que sea haga lo que tenga que hacer."
+  },
+  "peephole": {
+    "headerAlt": "Etiqueta Proyecto Peep",
+    "title": "Una aventura silenciosa",
+    "description": "Descubre el origen de un animal cazado y modificado por experimentos de aumento mientras descubre su nuevo potencial en el mundo exterior. No puede hablar, así que debes leer sus expresiones no verbales."
+  },
+  "planetary": {
+    "headerAlt": "Etiqueta Proyecto Planet",
+    "title": "Cuando la pureza se contamina",
+    "description": "La tierra es \"nueva\" y el creador hace seres adecuados para las tareas. Sigue la historia de uno que encuentra su propósito cuando lo único que tiene son sus instintos."
+  },
+  "fishhen": {
+    "headerAlt": "Etiqueta Proyecto Beat 'em up",
+    "title": "Cuando la cortesía es aprovechada",
+    "description": "Mientras estaban juntos, algo muy precioso fue tomado y algo que no sabían que existía despertó dentro de ellos. Dos personas normalmente pacíficas son sacadas de su zona de confort y tienen que convertirse en algo que no reconocen."
+  },
+  "triplet": {
+    "headerAlt": "Etiqueta Proyecto Turn Based",
+    "title": "Puede haber una ventaja en las diferencias",
+    "description": "Lleva a un grupo de mercenarios contratados a una aventura en una tierra medieval para volver a sellar el portal y reequilibrar la tierra. De los 4 expertos, el rey debe elegir a los 3 que cree mejores para el trabajo. Los 3 aprenden a confiar entre sí a través de su lucha compartida."
+  },
+  "lightbyte": {
+    "headerAlt": "Encabezado Lightbyte",
+    "pilotTitle": "El Piloto",
+    "pilot_p1": "Siguiendo las tradiciones antiguas, los habitantes actuales se han dividido en 3 oficios: granjeros, pescadores y cocineros, y estaban orgullosos de su trabajo duro. También había quienes practicaban la magia ancestral, pero vivían fuera de la sociedad y se enorgullecían de la manipulación espiritual.",
+    "pilot_p2": "También había una familia que no encajaba en ninguno de los grupos, viviendo en algún lugar intermedio (una abuela, su hija, su yerno y sus 3 nietos) que creían en el trabajo duro pero también estaban influenciados espiritualmente.",
+    "pilot_p3": "Una noche, mientras la abuela hablaba con los padres sobre un sueño recurrente que tenía, la casa de la familia fue abordada. Antes de que fueran comprometidos, los niños fueron escondidos en un lugar secreto bajo las tablas del suelo y se les dijo que no salieran.",
+    "pilot_p4": "Los niños escucharon peleas hasta que todo eventualmente quedó en silencio. Salieron de su escondite, encontraron a sus padres muertos y notaron que su abuela había desaparecido.",
+    "pilot_p5": "Mientras lloraban, 3 rayos de luz brillaron sobre ellos y una voz habló consolándolos; les dio habilidades y un sentido de propósito.",
+    "pilot_list": "Hijo mayor - Fuerza física y defensa\nHija menor - Precisión a distancia y visión mejorada\nHijo menor - Velocidad y agilidad",
+    "pilot_p7": "Los niños tuvieron que dejar el único lugar que conocían y siguieron la instrucción de la voz.",
+    "presentTitle": "El Presente",
+    "present_p1": "Hubo un piloto de dibujo animado escrito como secuela de una novela gráfica popular. Cuando tenías ocho años y amabas la novela, esperabas con ansias la serie, pero nunca se emitió ni se volvió a mencionar. Ahora, como adulto, pensaste en tu infancia y te preguntaste qué le pasó al programa. Una noche después del trabajo, decides investigar en línea y te encuentras con el episodio piloto. Te gustó, pero los artículos decían que la serie fue cancelada (posiblemente por matices religiosos) y no pudo ser comercializada.",
+    "present_p2": "Te acuestas en la cama esa noche, pensando en el niño que fuiste (luchando con la escuela, siendo socialmente torpe y jugando videojuegos para sobrellevarlo) y en cómo te hubiera gustado una explicación en ese entonces hasta que finalmente te duermes.",
+    "present_p3": "Abres los ojos en una choza de aspecto familiar. Cuando te levantas y te mueves, te das cuenta de que te has encogido y estás en pijamas cómodas. Cuando sales de la choza, te das cuenta de dónde estás, sintiendo miedo y emoción al mismo tiempo.",
+    "premiseTitle": "La Premisa",
+    "premise_p1": "Juegas como un adulto, en el cuerpo de un niño, navegando la mezcla distorsionada de las preocupaciones de tu vida pasada y el programa con el que recientemente te reconectaste.",
+    "premise_p2": "En este Metroidvania, el mundo se abre y se desarrolla ante tus ojos y debes usar tus nuevas habilidades para luchar y moverte a través de él para obtener algún tipo de cierre para tu niño interior."
+  }
+}

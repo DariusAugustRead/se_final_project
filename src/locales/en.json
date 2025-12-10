@@ -1,0 +1,70 @@
+{
+  "header": { "about": "About", "projects": "Projects" },
+  "home": { "welcome": "Welcome" },
+  "about": {
+    "headerAlt": "About header",
+    "title": "My journey as a solo developer",
+    "p1": "Hello all. I am pursuing my dream of becoming a game developer, and now, front-end web developer.",
+    "p2": "I have played video games my entire life. My first console was the Sega Genesis, and I could play it for hours, when I was left alone. At the time, I couldn't imagine that I would want to make them one day.",
+    "p3": "At around 17, I fell in love with retro, pixel art. I used to download sprite sheets and study the colors and how animation worked. My biggest inspiration came when I saw a little game in a laundromat named \"Metal Slug 3\". The expression that could be conveyed with tiny squares and a limited color palette were amazing to watch while the gameplay demo ran.",
+    "p4": "At 21, I went to the Art Institute of Dallas to study animation but, after it got too expensive and I learned that I would be creatively limited, I quit. I then tried to find ways to animate and possibly make games on my own.",
+    "p5": "I have tried programming with several game engines before but I never liked programming and I didn't stay consistent. I have also tried hiring programmers to work with but those relationships never developed into anything.",
+    "p6": "Now, in my 30s, after working many manual labor jobs and feeling unfulfilled, I have decided to pursue a career as a programmer. I thought about having a career in Cyber Security but after a little research, I didn't keep my interest. Then I found Triple Ten Software Engineering program and it felt like a better fit. This program has not been easy and I had to take multiple breaks and I have thought of giving up multiple times. But here I am working on my Final Project and the end is near.",
+    "p7": "I hope to continue building my Software Engineering career along with making my games and possibly my universe on the side."
+  },
+  "miniProjects": {
+    "headerAlt": "Mini projects header",
+    "title": "These are the smaller projects I plan on developing before I develop the larger ones",
+    "subtitle": "(Larger projects in development...)"
+  },
+  "tapestory": {
+    "headerAlt": "TapeStory header",
+    "sublabel": "This is my current game dev project.",
+    "lead": "This story is fully told when experienced from both sides",
+    "sideATitle": "Side A",
+    "sideA_p1": "You play as a boy training as a mining apprentice. One day at the end of a shift, you hear your adult co-workers talking about the abandoned mine sealed off due to something happening. Out of curiosity you sneak off one night, with your rooster, and try to peek through the cracks of the seal when it breaks and you fall in.",
+    "sideA_p2": "You must climb out of the bottom of the pit, trying to escape the gas and other hazards to return to the surface.",
+    "videoTitle": "TapeStory gameplay trailer",
+    "sideBTitle": "Side B",
+    "sideB_p1": "Outside of the atmosphere, you play as a girl piloting a space jet. While patrolling your planet, you see a blip on your radar and you go check it out. As you get closer, you notice that it swiftly approaches you before speeding past you. You panic, quickly turning around and pursuing it.",
+    "sideB_p2": "You must fight back against the incoming hordes of enemies, trying to reach the planet before whatever that thing was does."
+  },
+  "peephole": {
+    "headerAlt": "Project Peep label",
+    "title": "A silent adventure",
+    "description": "Discover the origin of a poached animal modified by augmentation experiments as he discovers his new potential in the outside world. He can't talk so you must read his non-verbal expressions."
+  },
+  "planetary": {
+    "headerAlt": "Project Planet label",
+    "title": "When purity gets tainted",
+    "description": "The land is \"new\" and the creator makes beings suitable for the tasks. Follow the story of one finding her purpose when all she has is her instincts."
+  },
+  "fishhen": {
+    "headerAlt": "Project Beat 'em up label",
+    "title": "When politeness is taken advantage of",
+    "description": "While out together, something very precious was taken and something they didn't know existed awoke inside of them. Two normally peaceful people are taken out of their comfort zone and have to become something they don't recognize."
+  },
+  "triplet": {
+    "headerAlt": "Project Turn Based label",
+    "title": "There can be an advantage in differences",
+    "description": "Take a group of hired mercenaries on an adventure in a medieval land to reseal the portal and rebalance the land. Out of the 4 experts, the king must choose the 3 he thinks are better for the job. The 3 learn to trust each other through their shared struggle."
+  },
+  "lightbyte": {
+    "headerAlt": "Lightbyte header",
+    "pilotTitle": "The Pilot",
+    "pilot_p1": "Following the traditions of old, the current inhabitants have sorted themselves into 3 proper trade professions - farmers, fishermen and cooks and they prided themselves on hard work. There were also those that practiced ancient magic, but lived outside of proper society and they prided themselves in spiritual manipulation.",
+    "pilot_p2": "There was also a family that did not fit in with either group, living somewhere in the middle (a grandmother, her daughter, her son-in-law and her 3 grandchildren) that believed in hard work but they were also spiritually influenced.",
+    "pilot_p3": "One night while the grandmother was talking to the parents about a recurring dream she was having, the family's home was approached. Before they were compromised, the kids were hidden in a secret place under the floor boards and told to not leave.",
+    "pilot_p4": "The kids heard fighting happening until everything eventually got silent. The kids left their hiding place, found their dead parents and noticed that their grandmother was missing.",
+    "pilot_p5": "While they grieved, 3 rays of light shined on them and a voice spoke comforting them; it gave them abilities and a sense of purpose.",
+    "pilot_list": "Eldest son - Physical Strength and Defense\nYounger daughter - Ranged Accuracy and Enhanced vision\nYoungest son - Speed and Agility",
+    "pilot_p7": "The children had to leave the only place they had known and followed the voice's instruction.",
+    "presentTitle": "The Present",
+    "present_p1": "There was a cartoon pilot written to be the sequel to a popular graphic novel. As an eight year old kid who loved the novel, you looked forward to the show coming out but it never aired and was never mentioned again. Now, as an adult, you thought about your childhood and wondered what happened to the show. One evening after work, you decide to go online and research what happened to it and you came across the pilot episode. You liked it but the articles written about it said that the show was cancelled (possibly for religious undertones) and it could not be merchandised.",
+    "present_p2": "You lie in bed that night, thinking about the kid you were (struggling with school, being socially awkward and playing video games to cope) and how you might have liked an explanation back then until you eventually fall asleep.",
+    "present_p3": "You open your eyes in a familiar looking hut. When you get up and move around, you notice that you have shrank and are in some comfortable pajamas. When you exit the hut, you realize where you are, feeling scared and excited at the same time.",
+    "premiseTitle": "The Premise",
+    "premise_p1": "You play as an adult, in your child body, navigating the warped blend of your past life's concerns and the show you recently reacquainted yourself with.",
+    "premise_p2": "In this Metroidvania, the world opens up and develops before your eyes and you must use your newly acquired skills to fight and move through it to get some kind of closure for your inner child."
+  }
+}
