@@ -1,4 +1,4 @@
-import fishHenLabel from "../../assets/projectBeatEmUp.png";
+import fishHenLabel from "../../assets/English/projectBeatEmUp.png";
 
 import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
 

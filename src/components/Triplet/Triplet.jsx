@@ -1,4 +1,4 @@
-import tripletLabel from "../../assets/projectTurnBased.png";
+import tripletLabel from "../../assets/English/projectTurnBased.png";
 
 import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
 

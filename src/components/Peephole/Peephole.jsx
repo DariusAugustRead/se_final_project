@@ -1,4 +1,4 @@
-import peepholeLabel from "../../assets/projectPeephole.png";
+import peepholeLabel from "../../assets/English/projectRabbit.png";
 
 import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
 

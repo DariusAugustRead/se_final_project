@@ -1,14 +1,14 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-import aboutLabel from "../../assets/about.png";
-import aboutLabelHover from "../../assets/about_hover.png";
-import miniProjects from "../../assets/miniProjects.png";
-import miniProjectsHover from "../../assets/miniProjects_hover.png";
-import lightbyte from "../../assets/lightbyte.png";
-import lightbyteHover from "../../assets/lightbyte_hover.png";
+import aboutLabel from "../../assets/English/about.png";
+import aboutLabelHover from "../../assets/English/about_hover.png";
+import miniProjects from "../../assets/English/miniProjects.png";
+import miniProjectsHover from "../../assets/English/miniProjects_hover.png";
+import lightbyte from "../../assets/English/lightbyte.png";
+import lightbyteHover from "../../assets/English/lightbyte_hover.png";
 import name from "../../assets/name.png";
-import banner from "../../assets/banner.png";
+import banner from "../../assets/English/banner.png";
 
 function Header() {
   return (

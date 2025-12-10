@@ -1,5 +1,5 @@
 import "./MiniProjects.css";
-import label from "../../assets/miniProjects.png";
+import label from "../../assets/English/miniProjects.png";
 
 import Tapestory from "../TapeStory/TapeStory";
 import Peephole from "../Peephole/Peephole";
@@ -13,7 +13,7 @@ function MiniProject() {
       <img src={label} alt="" className="mini_projects__label" />
       <h2 className="mini_projects__title">
         These are the smaller projects I plan on developing before I develop the
-        larger ones <span>(Larger projects not listed)</span>
+        larger ones <span>(Larger projects in development...)</span>
         <br />
         <br />
       </h2>

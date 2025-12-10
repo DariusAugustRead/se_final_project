@@ -1,4 +1,4 @@
-import planetLabel from "../../assets/projectPlanet.png";
+import planetLabel from "../../assets/English/projectPlanet.png";
 
 import MiniProjectCard from "../MiniProjectCard/MiniProjectCard";
 

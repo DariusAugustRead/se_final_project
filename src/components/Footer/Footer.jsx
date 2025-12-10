@@ -1,5 +1,5 @@
 import "./Footer.css";
-import banner from "../../assets/Banner.png";
+import banner from "../../assets/English/Banner.png";
 
 function Footer() {
   return (
