@@ -46,7 +46,7 @@
 }
 
 .header__right {
-  margin: 0px 40px 0 0;
+  margin: 0 0 0 96px;
   display: flex;
   gap: 20px;
 }
@@ -102,7 +102,7 @@
   display: flex;
   flex-direction: column;
   width: 178px;
-  margin: 0 0 0 96px;
+  margin: 0 0 0 360px;
   align-items: center;
 }
 
@@ -188,7 +188,7 @@
   }
 
   .header__center {
-    margin: 0 60px 0 80px;
+    margin: 0 0 0 240px;
   }
 
   .header__center_name {
@@ -196,8 +196,9 @@
   }
 
   .header__right {
-    margin: 0px 40px 0 0;
-    gap: 30px;
+    margin: 0;
+    padding: 0 0 0 60px;
+    gap: 10px;
     transform: none;
   }
 }
@@ -211,6 +212,10 @@
 
   .header__center {
     margin: 20px 0;
+  }
+
+  .header__left {
+    gap: 0;
   }
 
   .header__left_logo {

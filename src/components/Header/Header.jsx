@@ -73,8 +73,8 @@ function Header() {
             className="header__right_lightbyte header__right_lightbyte--hover"
           />
         </Link>
-        <LanguageSwitcher />
       </div>
+      <LanguageSwitcher />
     </header>
   );
 }

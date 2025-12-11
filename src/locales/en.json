@@ -5,7 +5,7 @@
     "headerAlt": "About header",
     "title": "My journey as a solo developer",
     "p1": "Hello all. I am pursuing my dream of becoming a game developer, and now, front-end web developer.",
-    "p2": "I have played video games my entire life. My first console was the Sega Genesis, and I could play it for hours, when I was left alone. At the time, I couldn't imagine that I would want to make them one day.",
+    "p2": "I have played video games my entire life. My first console was the Sega Genesis, and I could play it for hours when I was left alone. At the time, I couldn't imagine that I would want to make them one day.",
     "p3": "At around 17, I fell in love with retro, pixel art. I used to download sprite sheets and study the colors and how animation worked. My biggest inspiration came when I saw a little game in a laundromat named \"Metal Slug 3\". The expression that could be conveyed with tiny squares and a limited color palette were amazing to watch while the gameplay demo ran.",
     "p4": "At 21, I went to the Art Institute of Dallas to study animation but, after it got too expensive and I learned that I would be creatively limited, I quit. I then tried to find ways to animate and possibly make games on my own.",
     "p5": "I have tried programming with several game engines before but I never liked programming and I didn't stay consistent. I have also tried hiring programmers to work with but those relationships never developed into anything.",
@@ -15,7 +15,7 @@
   "miniProjects": {
     "headerAlt": "Mini projects header",
     "title": "These are the smaller projects I plan on developing before I develop the larger ones",
-    "subtitle": "(Larger projects in development...)"
+    "subtitle": "(Larger projects are in development...)"
   },
   "tapestory": {
     "headerAlt": "TapeStory header",
