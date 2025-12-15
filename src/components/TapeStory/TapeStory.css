@@ -1,0 +1,88 @@
+.tape-story {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 10px;
+}
+
+.tape-story__label {
+  height: 72px;
+  width: auto;
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  align-self: center;
+}
+
+.tape-story__sublabel {
+  text-align: center;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.tape-story__title {
+  align-self: center;
+  font-size: 30px;
+}
+
+.tape-story__info {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 22px;
+}
+
+.tape-story__video {
+  width: 100%;
+  max-width: 100%;
+  margin: 40px auto 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  box-sizing: border-box;
+}
+
+.tape-story__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .tape-story {
+    max-width: 540px;
+  }
+
+  .tape-story__title {
+    text-align: center;
+    object-fit: contain;
+  }
+
+  .tape-story__label {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .tape-story {
+    max-width: 320px;
+    margin: 40px 0 0;
+  }
+
+  .tape-story__label {
+    height: 48px;
+  }
+
+  .tape-story__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .tape-story__video {
+    min-width: 240px;
+    margin: 20px auto 0;
+  }
+}

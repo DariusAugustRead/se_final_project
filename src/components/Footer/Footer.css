@@ -1,0 +1,45 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 60px 0 20px;
+}
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/faceIcon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transform: scale(2);
+  margin: 0 0 40px;
+}
+
+.footer__icon:hover {
+  background-image: url(../../assets/faceIcon_smile.png);
+}
+
+.footer__banner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transform: scale(2);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .footer__icon {
+    width: 18px;
+    height: 30px;
+    margin: 0 0 20px;
+  }
+
+  .footer__banner {
+    transform: none;
+  }
+}

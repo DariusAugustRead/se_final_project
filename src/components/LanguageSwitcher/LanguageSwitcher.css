@@ -1,0 +1,34 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  margin: 0 48px 7px 0;
+  border: none;
+}
+.language-switcher button {
+  background: transparent;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.language-switcher button:hover,
+.language-switcher button:focus,
+.language-switcher button:active,
+.language-switcher button:focus-visible {
+  background-color: white;
+  color: black;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .language-switcher {
+    margin: 0 0 7px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

@@ -1,0 +1,270 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 98px;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: black;
+}
+
+.header__left,
+.header__center,
+.header__right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__about-label,
+.header__right_mini-projects,
+.header__right_lightbyte {
+  display: block;
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.header__left_logo {
+  margin: 0 5px 5px 0;
+  width: 44px;
+  height: 48px;
+  background-image: url(../../assets/logo_upright.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.header__left_logo:hover {
+  background-image: url(../../assets/logo_upright_close.png);
+}
+
+.header__right {
+  margin: 0 0 0 96px;
+  display: flex;
+  gap: 20px;
+}
+
+.header a .header__about-label--default {
+  display: inline-block;
+  visibility: visible;
+}
+.header a .header__about-label--hover {
+  display: none;
+  visibility: hidden;
+}
+
+/* >= 769px: hide the about-label in .header__right, show left */
+@media screen and (min-width: 769px) {
+  .header__right a .header__about-label--default,
+  .header__right a .header__about-label--hover {
+    display: none;
+    visibility: hidden;
+  }
+  .header__right a .header__about-label--default {
+    display: none;
+    visibility: hidden;
+  }
+  .header__left a .header__about-label--default {
+    display: inline-block;
+    visibility: visible;
+  }
+  .header__left a .header__about-label--hover {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* <= 768px: hide the about-label in .header__left, show right */
+@media screen and (max-width: 768px) {
+  .header__left a .header__about-label--default,
+  .header__left a .header__about-label--hover {
+    display: none;
+    visibility: hidden;
+  }
+  .header__right a .header__about-label--default,
+  .header__right a .header__about-label--hover {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+.header__about-label {
+  margin: 0;
+}
+
+.header__center {
+  display: flex;
+  flex-direction: column;
+  width: 178px;
+  margin: 0 0 0 360px;
+  align-items: center;
+}
+
+.header__center_name {
+  display: block;
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header__center_banner {
+  display: block;
+  height: 18px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header__about-label,
+.header__right_mini-projects,
+.header__right_lightbyte {
+  display: inline-block;
+  height: 30px;
+  width: auto;
+}
+
+/* Hide all hover variants by default; show default images by default. */
+.header a .header__about-label--hover,
+.header a .header__right_mini-projects--hover,
+.header a .header__right_lightbyte--hover {
+  display: none;
+  visibility: hidden;
+}
+
+.header a .header__about-label--default,
+.header a .header__right_mini-projects--default,
+.header a .header__right_lightbyte--default {
+  display: inline-block;
+  visibility: visible;
+}
+
+/* When hovering a specific link, swap only the images inside that link. */
+.header a:hover .header__about-label--default,
+.header a:hover .header__right_mini-projects--default,
+.header a:hover .header__right_lightbyte--default {
+  display: none;
+  visibility: hidden;
+}
+.header a:hover .header__about-label--hover,
+.header a:hover .header__right_mini-projects--hover,
+.header a:hover .header__right_lightbyte--hover {
+  display: inline-block;
+  visibility: visible;
+}
+
+/* Desktop defaults: left About is visible/interactive, right About is hidden/uninteractive */
+.header__left a .header__about-label--default {
+  display: inline-block;
+  visibility: visible;
+  pointer-events: auto;
+}
+.header__left a .header__about-label--hover {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header__right a .header__about-label--default,
+.header__right a .header__about-label--hover {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .header {
+    justify-content: space-between;
+    padding: 30px 25px 20px;
+  }
+
+  .header__about-label,
+  .header__right_mini-projects,
+  .header__right_lightbyte {
+    height: 18px;
+  }
+
+  .header__center {
+    margin: 0 0 0 240px;
+  }
+
+  .header__center_name {
+    height: 30px;
+  }
+
+  .header__right {
+    margin: 0;
+    padding: 0 0 0 60px;
+    gap: 10px;
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 30px 0;
+    max-height: 280px;
+  }
+
+  .header__center {
+    margin: 20px 0;
+  }
+
+  .header__left {
+    gap: 0;
+  }
+
+  .header__left_logo {
+    margin: 0;
+  }
+
+  /* On small screens we need the LEFT about-label hidden and the RIGHT about-label visible.
+     Use !important and pointer-events to ensure the left is non-functional and the right is interactive. */
+  .header__right {
+    margin: 0 0 0px;
+    transform: scale(0.75);
+  }
+  /* hide left About entirely on small screens */
+  .header__left a .header__about-label--default,
+  .header__left a .header__about-label--hover {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* show right About on small screens */
+  .header__right a .header__about-label--default {
+    display: inline-block !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .header__right a .header__about-label--hover {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Scoped hover swap for right About on small screens */
+  .header__right a:hover .header__about-label--default {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .header__right a:hover .header__about-label--hover {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header__center {
+    transform: scale(0.75);
+  }
+
+  .header__right {
+    transform: scale(0.65);
+  }
+}

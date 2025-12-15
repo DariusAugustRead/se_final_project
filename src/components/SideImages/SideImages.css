@@ -1,0 +1,35 @@
+.sideImage {
+  position: fixed;
+  top: 0;
+  width: 96px; /* fixed width requested */
+  height: auto; /* keep proportional height */
+  display: block;
+  z-index: 100;
+  pointer-events: none; /* decorative only */
+  image-rendering: pixelated;
+  transform: scale(2);
+}
+
+.sideImage-left {
+  left: 0;
+}
+
+.sideImage-right {
+  right: 0;
+}
+
+@media screen and (max-width: 1420px) {
+  .sideImage {
+    transform: none;
+    top: -20px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .sideImage {
+    transform: none;
+    top: -20px;
+    display: block;
+  }
+}
